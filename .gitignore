@@ -1,0 +1,89 @@
+# SECURITY: Sensitive authentication and API keys - NEVER commit these!
+!auth/*.template
+*.json
+!*.template.json
+*.key
+*.pem
+
+# Environment variables containing secrets
+.env
+.env.local
+.env.production
+.env.development
+
+# API Keys and secrets (catch common naming patterns)
+*secret*
+*token*
+*credential*
+*password*
+
+# Generated logs with potentially sensitive data
+/logs/
+/tests/logs/
+
+# LaTeX temporary and generated files
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+!documentation/documentation.pdf
+documentation/*.aux
+documentation/*.log
+documentation/*.toc
+documentation/*.out
+
+# Python cache and compiled files
+/__pycache__/
+/tests/__pycache__/
+/modules/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# User data that might contain personal information
+user_data/
